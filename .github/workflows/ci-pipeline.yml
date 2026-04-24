@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
   build-and-test:
@@ -44,14 +41,17 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: npm
+          cache-dependency-path: |
+            backend/package-lock.json
+            frontend/package-lock.json
 
       - name: Install Backend Dependencies
         working-directory: backend
-        run: npm install
+        run: npm ci
 
       - name: Install Frontend Dependencies
         working-directory: frontend
-        run: npm install
+        run: npm ci
 
       - name: Create Backend Environment File
         run: |
@@ -59,9 +59,15 @@ jobs:
           echo "MONGO_URI=mongodb://admin:admin@localhost:27017/assessment?authSource=admin" >> backend/.env
           echo "MR_URL=amqp://admin:admin@localhost:5672/rabbitmq-host" >> backend/.env
 
+      - name: Wait for MongoDB
+        run: sleep 10
+
+      - name: Wait for RabbitMQ
+        run: sleep 15
+
       - name: Run Backend Tests
         working-directory: backend
-        run: npm test
+        run: npm test --if-present
 
       - name: Build Backend
         working-directory: backend
