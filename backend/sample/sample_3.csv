@@ -1,0 +1,101 @@
+id,date,description,amount,category
+1,2024-01-02,Salary Credit,95000.00,Income
+2,2024-01-03,Swiggy Order #112233,-420.00,Food & Dining
+3,2024-01-04,Uber Ride,-190.00,Transport
+4,2024-01-05,Amazon Purchase,-3499.00,Shopping
+5,2024-01-06,BEST Electricity Bill,-2100.00,Utilities
+6,2024-01-07,Zepto Groceries,-950.00,Groceries
+7,2024-01-08,Netflix Subscription,-649.00,Entertainment
+8,2024-01-09,ATM Withdrawal,-5000.00,Cash
+9,2024-01-10,Zomato Order #445566,-310.00,Food & Dining
+10,2024-01-11,PhonePe Transfer to Priya,-2000.00,Transfer
+11,2024-01-12,Ola Ride,-210.00,Transport
+12,2024-01-13,BigBasket Order,-1740.00,Groceries
+13,2024-01-14,Spotify Premium,-119.00,Entertainment
+14,2024-01-15,Doctor Consultation,-600.00,Healthcare
+15,2024-01-16,Medplus Pharmacy,-890.00,Healthcare
+16,2024-01-17,SIP - Zerodha,-10000.00,Investment
+17,2024-01-18,Petrol - HP Pump,-2800.00,Transport
+18,2024-01-19,D-Mart Shopping,-2600.00,Groceries
+19,2024-01-20,BookMyShow Tickets,-700.00,Entertainment
+20,2024-01-21,HDFC Credit Card Payment,-12000.00,Finance
+21,2024-01-22,Freelance Payment,15000.00,Income
+22,2024-01-23,Airtel Postpaid Bill,-999.00,Utilities
+23,2024-01-24,LIC Premium,-4500.00,Finance
+24,2024-01-25,Swiggy Order #223344,-380.00,Food & Dining
+25,2024-01-26,Blinkit Order,-560.00,Groceries
+26,2024-01-27,YouTube Premium,-189.00,Entertainment
+27,2024-01-28,ATM Withdrawal,-3000.00,Cash
+28,2024-01-29,Rent Payment,-28000.00,Housing
+29,2024-01-30,Ola Ride,-240.00,Transport
+30,2024-01-31,Zomato Order #667788,-290.00,Food & Dining
+31,2024-02-01,Salary Credit,95000.00,Income
+32,2024-02-02,Swiggy Order #334455,-450.00,Food & Dining
+33,2024-02-03,Uber Ride,-160.00,Transport
+34,2024-02-04,Amazon Purchase,-1299.00,Shopping
+35,2024-02-05,BEST Electricity Bill,-1980.00,Utilities
+36,2024-02-06,Zepto Groceries,-870.00,Groceries
+37,2024-02-07,Disney+ Hotstar,-299.00,Entertainment
+38,2024-02-08,Zomato Order #778899,-340.00,Food & Dining
+39,2024-02-09,PhonePe Transfer to Dad,-5000.00,Transfer
+40,2024-02-10,BigBasket Order,-1560.00,Groceries
+41,2024-02-11,Gym Membership,-2000.00,Health & Fitness
+42,2024-02-12,Petrol - Indian Oil,-3100.00,Transport
+43,2024-02-13,BookMyShow Tickets,-800.00,Entertainment
+44,2024-02-14,Flowers & Gifts,-1400.00,Shopping
+45,2024-02-15,HDFC Credit Card Payment,-14000.00,Finance
+46,2024-02-16,Freelance Payment,8000.00,Income
+47,2024-02-17,Airtel Broadband,-999.00,Utilities
+48,2024-02-18,SIP - Groww,-5000.00,Investment
+49,2024-02-19,D-Mart Shopping,-3100.00,Groceries
+50,2024-02-20,Doctor Consultation,-800.00,Healthcare
+51,2024-02-21,Medplus Pharmacy,-640.00,Healthcare
+52,2024-02-22,Swiggy Order #445566,-490.00,Food & Dining
+53,2024-02-23,ATM Withdrawal,-4000.00,Cash
+54,2024-02-24,Blinkit Order,-430.00,Groceries
+55,2024-02-25,Rent Payment,-28000.00,Housing
+56,2024-02-26,Uber Ride,-220.00,Transport
+57,2024-02-27,Amazon Purchase,-799.00,Shopping
+58,2024-02-28,Zomato Order #889900,-260.00,Food & Dining
+59,2024-03-01,Salary Credit,95000.00,Income
+60,2024-03-02,Swiggy Order #556677,-410.00,Food & Dining
+61,2024-03-03,Ola Ride,-195.00,Transport
+62,2024-03-04,BEST Electricity Bill,-2300.00,Utilities
+63,2024-03-05,Zepto Groceries,-1020.00,Groceries
+64,2024-03-06,Netflix Subscription,-649.00,Entertainment
+65,2024-03-07,PhonePe Transfer to Rohan,-1500.00,Transfer
+66,2024-03-08,BigBasket Order,-1890.00,Groceries
+67,2024-03-09,Gym Membership,-2000.00,Health & Fitness
+68,2024-03-10,Petrol - HP Pump,-2900.00,Transport
+69,2024-03-11,SIP - Zerodha,-10000.00,Investment
+70,2024-03-12,BookMyShow Tickets,-600.00,Entertainment
+71,2024-03-13,HDFC Credit Card Payment,-16000.00,Finance
+72,2024-03-14,Freelance Payment,20000.00,Income
+73,2024-03-15,Airtel Postpaid Bill,-999.00,Utilities
+74,2024-03-16,LIC Premium,-4500.00,Finance
+75,2024-03-17,Swiggy Order #667788,-370.00,Food & Dining
+76,2024-03-18,Blinkit Order,-510.00,Groceries
+77,2024-03-19,YouTube Premium,-189.00,Entertainment
+78,2024-03-20,ATM Withdrawal,-6000.00,Cash
+79,2024-03-21,Rent Payment,-28000.00,Housing
+80,2024-03-22,Uber Ride,-175.00,Transport
+81,2024-03-23,Amazon Purchase,-4999.00,Shopping
+82,2024-03-24,Zomato Order #990011,-320.00,Food & Dining
+83,2024-03-25,Doctor Consultation,-1000.00,Healthcare
+84,2024-03-26,Medplus Pharmacy,-1100.00,Healthcare
+85,2024-03-27,D-Mart Shopping,-2800.00,Groceries
+86,2024-03-28,PhonePe Transfer to Ananya,-3000.00,Transfer
+87,2024-03-29,Gym Membership,-2000.00,Health & Fitness
+88,2024-03-30,Petrol - Indian Oil,-3300.00,Transport
+89,2024-03-31,Swiggy Order #778899,-440.00,Food & Dining
+90,2024-04-01,Salary Credit,95000.00,Income
+91,2024-04-02,Zepto Groceries,-780.00,Groceries
+92,2024-04-03,Ola Ride,-230.00,Transport
+93,2024-04-04,BEST Electricity Bill,-2050.00,Utilities
+94,2024-04-05,SIP - Groww,-5000.00,Investment
+95,2024-04-06,BookMyShow Tickets,-750.00,Entertainment
+96,2024-04-07,Amazon Purchase,-2199.00,Shopping
+97,2024-04-08,Zomato Order #112244,-280.00,Food & Dining
+98,2024-04-09,HDFC Credit Card Payment,-13500.00,Finance
+99,2024-04-10,Freelance Payment,11000.00,Income
+100,2024-04-11,Rent Payment,-28000.00,Housing

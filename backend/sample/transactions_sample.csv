@@ -1,0 +1,46 @@
+id,date,description,amount,category
+1,2024-01-03,Swiggy Order #998812,-450.00,Food & Dining
+2,2024-01-05,Salary Credit,95000.00,Income
+3,2024-01-07,BEST Electricity Bill,-2340.00,Utilities
+4,2024-01-09,Uber Ride,-180.00,Transport
+5,2024-01-11,Amazon Purchase,-1299.00,Shopping
+6,2024-01-14,Zepto Groceries,-870.00,Groceries
+7,2024-01-15,Netflix Subscription,-649.00,Entertainment
+8,2024-01-17,ATM Withdrawal,-5000.00,Cash
+9,2024-01-19,PhonePe Transfer to Raj,-2000.00,Transfer
+10,2024-01-21,Zomato Order #447201,-320.00,Food & Dining
+11,2024-01-23,HDFC Credit Card Payment,-15000.00,Finance
+12,2024-01-25,Freelance Payment Received,12000.00,Income
+13,2024-01-27,Ola Ride,-220.00,Transport
+14,2024-01-29,BigBasket Order,-1560.00,Groceries
+15,2024-01-31,Spotify Premium,-119.00,Entertainment
+16,2024-02-02,Swiggy Order #110034,-530.00,Food & Dining
+17,2024-02-04,D-Mart Shopping,-3200.00,Groceries
+18,2024-02-06,Airtel Postpaid Bill,-999.00,Utilities
+19,2024-02-08,BookMyShow Tickets,-800.00,Entertainment
+20,2024-02-10,Salary Credit,95000.00,Income
+21,2024-02-12,Petrol - HP Pump,-3500.00,Transport
+22,2024-02-14,Flowers & Gifts - Valentine,-1200.00,Shopping
+23,2024-02-16,LIC Premium,-4500.00,Finance
+24,2024-02-18,Zepto Groceries,-640.00,Groceries
+25,2024-02-20,Amazon Purchase,-2499.00,Shopping
+26,2024-02-22,,−350.00,Food & Dining
+27,2024-02-24,PhonePe Transfer to Mom,-3000.00,Transfer
+28,2024-02-26,INVALID_DATE_HERE,−990.00,Utilities
+29,2024-02-28,Swiggy Order #229944,-410.00,Food & Dining
+30,2024-03-01,Salary Credit,95000.00,Income
+31,2024-03-03,Rent Payment,-28000.00,Housing
+32,2024-03-05,Uber Ride,-310.00,Transport
+33,2024-03-07,Zomato Order #558812,-290.00,Food & Dining
+34,2024-03-09,SIP - Zerodha Mutual Fund,-10000.00,Investment
+35,2024-03-11,Amazon Purchase,-799.00,Shopping
+36,2024-03-13,Blinkit Order,-490.00,Groceries
+37,2024-03-15,YouTube Premium,-189.00,Entertainment
+38,2024-03-17,ATM Withdrawal,-4000.00,Cash
+39,2024-03-19,Doctor Consultation,-800.00,Healthcare
+40,2024-03-21,Medplus Pharmacy,-1230.00,Healthcare
+41,2024-03-23,Swiggy Order #334421,-670.00,Food & Dining
+42,2024-03-25,Freelance Payment Received,18000.00,Income
+43,2024-03-27,Ola Ride,-195.00,Transport
+44,2024-03-29,HDFC Credit Card Payment,-18000.00,Finance
+45,2024-03-31,this is not a number,abc,Shopping

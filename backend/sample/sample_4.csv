@@ -1,0 +1,31 @@
+id,date,description,amount,category
+1,2024-01-01,New Year Bonus,50000.00,Income
+2,2024-01-01,New Year Party,-8500.00,Food & Dining
+3,2024-01-01,Cab Home from Party,-650.00,Transport
+4,2024-02-29,Leap Day Grocery Run,-1200.00,Groceries
+5,2024-03-31,Quarter End Bonus,25000.00,Income
+6,2024-03-31,Quarter End Team Dinner,-4200.00,Food & Dining
+7,2024-12-31,Year End Bonus,100000.00,Income
+8,2024-12-31,New Year Eve Party Booking,-12000.00,Entertainment
+9,2024-06-15,Transfer to Self - Savings,-50000.00,Transfer
+10,2024-06-15,Transfer from Self - Savings,50000.00,Transfer
+11,2024-07-04,Amazon Sale Purchase,-15670.00,Shopping
+12,2024-07-04,Amazon Sale Purchase,-15670.00,Shopping
+13,2024-07-04,Amazon Sale Purchase,-15670.00,Shopping
+14,2024-09-01,Salary Credit,95000.00,Income
+15,2024-09-01,Salary Credit,95000.00,Income
+16,2024-11-01,Diwali Gifts & Shopping,-22000.00,Shopping
+17,2024-11-01,Diwali Bonus,50000.00,Income
+18,2024-11-02,Diwali Crackers,-3500.00,Shopping
+19,2024-11-03,Post-Diwali Sale - Myntra,-6700.00,Shopping
+20,2024-11-04,Charity Donation,-5000.00,Donation
+21,2024-01-15,₹0.00 Cashback Credit,0.00,Income
+22,2024-01-16,Round-off Adjustment,-0.01,Finance
+23,2024-01-17,Interest Credit,0.50,Income
+24,2024-08-15,Independence Day Sale - Amazon,-34999.00,Shopping
+25,2024-08-15,Independence Day Bonus,10000.00,Income
+26,2024-10-02,Gandhi Jayanti - Bank Holiday Pending Transfer,0.00,Transfer
+27,2024-05-01,Labour Day - Missed EMI,0.00,Finance
+28,2024-03-15,Advance Salary,47500.00,Income
+29,2024-03-31,Salary Credit (adjusted for advance),47500.00,Income
+30,2024-06-30,Annual Insurance Premium,-18000.00,Finance
