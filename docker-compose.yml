@@ -1,23 +1,33 @@
 services:
   postgres:
     image: postgres:17
+    container_name: seat-postgres
     environment:
       POSTGRES_DB: seat_reserve
-      POSTGRES_USER: seatreserve
-      POSTGRES_PASSWORD: seatreserve
-    ports: ["5432:5432"]
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - '5432:5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U seatreserve -d seat_reserve"]
+      test: ['CMD-SHELL', 'pg_isready -U postgres -d seat_reserve']
       interval: 5s
       timeout: 3s
       retries: 10
+
   app:
     build: .
+    container_name: seat-app
     environment:
       DB_URL: jdbc:postgresql://postgres:5432/seat_reserve
-      DB_USERNAME: seatreserve
-      DB_PASSWORD: seatreserve
-    ports: ["8080:8080"]
+      DB_USERNAME: postgres
+      DB_PASSWORD: postgres
+    ports:
+      - '8080:8080'
     depends_on:
       postgres:
         condition: service_healthy
+
+volumes:
+  postgres_data:
