@@ -14,15 +14,16 @@ public class ReservationMetrics {
 	private final Counter limit;
 	private final Counter replay;
 	private final Counter otherDeclined;
-	private final AtomicLong available;
+	private final java.util.Map<Long, AtomicLong> availableByShow = new java.util.concurrent.ConcurrentHashMap<>();
+	private final MeterRegistry registry;
 
 	public ReservationMetrics(MeterRegistry r) {
+		this.registry = r;
 		confirmed = r.counter("reservations_confirmed_total");
 		seatTaken = r.counter("reservations_declined_total", "reason", "seat-taken");
 		limit = r.counter("reservations_declined_total", "reason", "per-user-limit");
 		replay = r.counter("reservations_declined_total", "reason", "idempotent-replay");
 		otherDeclined = r.counter("reservations_declined_total", "reason", "other");
-		available = r.gauge("seats_available", new AtomicLong(), AtomicLong::doubleValue);
 	}
 
 	public void confirmed() {
@@ -38,7 +39,12 @@ public class ReservationMetrics {
 		}
 	}
 
-	public void available(long n) {
-		available.set(n);
+	public void available(Long showId, long n) {
+		AtomicLong value = availableByShow.computeIfAbsent(showId, id -> {
+			AtomicLong holder = new AtomicLong();
+			registry.gauge("seats_available", java.util.List.of(io.micrometer.core.instrument.Tag.of("show_id", String.valueOf(id))), holder, AtomicLong::doubleValue);
+			return holder;
+		});
+		value.set(n);
 	}
 }

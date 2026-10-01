@@ -54,7 +54,7 @@ public class ShowService {
 
         List<Seat> all=seats.findAllByShowId(id);
         long a=all.stream().filter(x->x.getStatus()==SeatStatus.AVAILABLE).count(),h=all.stream().filter(x->x.getStatus()==SeatStatus.HELD).count(),c=all.stream().filter(x->x.getStatus()==SeatStatus.CONFIRMED).count();
-        metrics.available(a);
+        metrics.available(id, a);
         
         return new ShowResponse(s.getId(),s.getName(),s.getPricePaise(),s.getPerUserLimit(),all.size(),a,h,c,all.stream().map(x->new SeatResponse(x.getSeatNumber(),x.getStatus().name().toLowerCase())).toList());
     }

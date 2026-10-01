@@ -114,9 +114,13 @@ public class ReservationService {
 		lock(lockKey(r.getShow().getId(),userId));
 
 		if(r.getStatus()==ReservationStatus.CANCELLED)
-			return response(r,List.of());List<Seat> owned=seats.findAllByShowId(r.getShow().getId()).stream().filter(s->s.getStatus()==SeatStatus.CONFIRMED).filter(s->reservationSeats.findById(new ReservationSeat.Key(r.getId(),s.getId())).isPresent()).sorted(Comparator.comparing(Seat::getSeatNumber)).toList();
+			return response(r,List.of());
+		List<ReservationSeat> links=reservationSeats.findByReservationId(r.getId());
+		List<Seat> owned=links.isEmpty()?List.of():seats.findForUpdateByIds(links.stream().map(ReservationSeat::getSeatId).toList()).stream().filter(s->s.getStatus()==SeatStatus.CONFIRMED).sorted(Comparator.comparing(Seat::getSeatNumber)).toList();
 		
 		for(Seat s:owned)s.setStatus(SeatStatus.AVAILABLE);
+
+		reservationSeats.deleteAll(links);
 
 		UserShowCounter counter=counters.findByShowIdAndUserId(r.getShow().getId(),userId).orElse(null);
 
